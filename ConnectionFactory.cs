@@ -51,11 +51,11 @@ namespace MainProject.Web.Repositories.Shared
                     }
                     finally
                     {
-						if (conn.State == ConnectionState.Open)
-						{
-							conn.Close();
-						}
-					}
+			if (conn.State == ConnectionState.Open)
+			{
+				conn.Close();
+			}
+		    }
                 }
 
                 if (!string.IsNullOrWhiteSpace(this.TenantDbName))
